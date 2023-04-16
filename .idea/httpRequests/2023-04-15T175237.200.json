@@ -1,0 +1,50 @@
+{
+  "id": 101,
+  "buildTypeId": "buildId",
+  "state": "queued",
+  "href": "/app/rest/buildQueue/id:101",
+  "webUrl": "http://localhost:8111/viewQueued.html?itemId=101",
+  "buildType": {
+    "id": "buildId",
+    "name": "testBuild",
+    "projectName": "Test Project",
+    "projectId": "testProjectId",
+    "href": "/app/rest/buildTypes/id:buildId",
+    "webUrl": "http://localhost:8111/viewType.html?buildTypeId=buildId"
+  },
+  "waitReason": "Build settings have not been finalized",
+  "queuedDate": "20230415T155237+0000",
+  "triggered": {
+    "type": "user",
+    "date": "20230415T155237+0000",
+    "user": {
+      "username": "admin",
+      "id": 1,
+      "href": "/app/rest/users/id:1"
+    }
+  },
+  "changes": {
+    "href": "/app/rest/changes?locator=build:(id:101)"
+  },
+  "revisions": {
+    "count": 0
+  },
+  "compatibleAgents": {
+    "href": "/app/rest/agents?locator=compatible:(build:(id:101))"
+  },
+  "artifacts": {
+    "href": "/app/rest/builds/id:101/artifacts/children/"
+  },
+  "properties": {
+    "count": 1,
+    "property": [
+      {
+        "name": "myBuildParameter",
+        "value": "myValue",
+        "inherited": true
+      }
+    ]
+  },
+  "vcsLabels": [],
+  "customization": {}
+}

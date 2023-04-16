@@ -1,0 +1,67 @@
+{
+  "id": 101,
+  "buildTypeId": "buildId",
+  "number": "1",
+  "status": "SUCCESS",
+  "state": "finished",
+  "href": "/app/rest/builds/id:101",
+  "webUrl": "http://localhost:8111/viewLog.html?buildId=101&buildTypeId=buildId",
+  "statusText": "Success",
+  "buildType": {
+    "id": "buildId",
+    "name": "testBuild",
+    "projectName": "Test Project",
+    "projectId": "testProjectId",
+    "href": "/app/rest/buildTypes/id:buildId",
+    "webUrl": "http://localhost:8111/viewType.html?buildTypeId=buildId"
+  },
+  "queuedDate": "20230415T155237+0000",
+  "startDate": "20230415T155635+0000",
+  "finishDate": "20230415T155640+0000",
+  "triggered": {
+    "type": "user",
+    "date": "20230415T155237+0000",
+    "user": {
+      "username": "admin",
+      "id": 1,
+      "href": "/app/rest/users/id:1"
+    }
+  },
+  "changes": {
+    "href": "/app/rest/changes?locator=build:(id:101)",
+    "count": 0
+  },
+  "revisions": {
+    "count": 0
+  },
+  "agent": {
+    "id": 1,
+    "name": "ip_172.17.0.1",
+    "typeId": 1,
+    "href": "/app/rest/agents/id:1",
+    "webUrl": "http://localhost:8111/agentDetails.html?id=1&agentTypeId=1&realAgentName=ip_172.17.0.1"
+  },
+  "artifacts": {
+    "count": 0,
+    "href": "/app/rest/builds/id:101/artifacts/children/"
+  },
+  "relatedIssues": {
+    "href": "/app/rest/builds/id:101/relatedIssues"
+  },
+  "properties": {
+    "count": 1,
+    "property": [
+      {
+        "name": "myBuildParameter",
+        "value": "myValue",
+        "inherited": true
+      }
+    ]
+  },
+  "statistics": {
+    "href": "/app/rest/builds/id:101/statistics"
+  },
+  "vcsLabels": [],
+  "finishOnAgentDate": "20230415T155640+0000",
+  "customization": {}
+}

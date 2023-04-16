@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<buildTypes count="2" href="/app/rest/buildTypes">
+    <buildType id="AutoFeature_Build" name="Build" projectName="Auto Feature" projectId="AutoFeature"
+               href="/app/rest/buildTypes/id:AutoFeature_Build"
+               webUrl="http://localhost:8111/viewType.html?buildTypeId=AutoFeature_Build"/>
+    <buildType id="id" name="testBuildName" projectName="Test Project" projectId="testProjectId"
+               href="/app/rest/buildTypes/id:id" webUrl="http://localhost:8111/viewType.html?buildTypeId=id"/>
+</buildTypes>

@@ -1,0 +1,1007 @@
+GET http://admin:admin@localhost:8111/app/rest/builds/id:101
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a99a0b76-789a-4af9-969e-a76317355385
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: RecentLogin=; TCSESSIONID=7F9BCBC0E91260199712CC4D99107CFE
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T175949.200.json
+
+###
+
+GET http://admin:admin@localhost:8111/app/rest/builds/id:101
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a99a0b76-789a-4af9-969e-a76317355385
+Content-Length: 44
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: RecentLogin=; TCSESSIONID=7F9BCBC0E91260199712CC4D99107CFE
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "buildType": {
+    "id": "buildId"
+  }
+}
+
+<> 2023-04-15T175943.200.json
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/builds/id:101
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a99a0b76-789a-4af9-969e-a76317355385
+Content-Length: 44
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=CDBB06F0B588BFC75B0D4987549D4472
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "buildType": {
+    "id": "buildId"
+  }
+}
+
+<> 2023-04-15T175940.403.txt
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/buildQueue
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a99a0b76-789a-4af9-969e-a76317355385
+Content-Length: 43
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=CDBB06F0B588BFC75B0D4987549D4472
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+	"buildType": {
+    	"id": "buildId"
+	}
+}
+
+<> 2023-04-15T175237.200.json
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/buildTypes
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a99a0b76-789a-4af9-969e-a76317355385
+Content-Length: 752
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=CDBB06F0B588BFC75B0D4987549D4472
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "buildId",
+  "name": "testBuild",
+  "project": {
+    "id": "testProjectId"
+  },
+  "parameters": {
+    "property": [
+      {
+        "name": "myBuildParameter",
+        "value": "myValue"
+      }
+    ]
+  },
+  "steps": {
+    "step": [
+      {
+        "name": "myCommandLineStep",
+        "type": "simpleRunner",
+        "properties": {
+          "count": 3,
+          "property": [
+            {
+              "name": "script.content",
+              "value": "echo 'Hello World!'"
+            },
+            {
+              "name": "teamcity.step.mode",
+              "value": "default"
+            },
+            {
+              "name": "use.custom.script",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+<> 2023-04-15T175230.200.json
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/buildTypes
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a99a0b76-789a-4af9-969e-a76317355385
+Content-Length: 756
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=CDBB06F0B588BFC75B0D4987549D4472
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "buildId",
+  "name": "testBuildName",
+  "project": {
+    "id": "testProjectId"
+  },
+  "parameters": {
+    "property": [
+      {
+        "name": "myBuildParameter",
+        "value": "myValue"
+      }
+    ]
+  },
+  "steps": {
+    "step": [
+      {
+        "name": "myCommandLineStep",
+        "type": "simpleRunner",
+        "properties": {
+          "count": 3,
+          "property": [
+            {
+              "name": "script.content",
+              "value": "echo 'Hello World!'"
+            },
+            {
+              "name": "teamcity.step.mode",
+              "value": "default"
+            },
+            {
+              "name": "use.custom.script",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+<> 2023-04-15T175215.400.txt
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/buildTypes
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: 9c72c114-0e87-46bd-bcd0-e0f016467854
+Content-Length: 756
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=CDBB06F0B588BFC75B0D4987549D4472
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "buildId",
+  "name": "testBuildName",
+  "project": {
+    "id": "testProjectId"
+  },
+  "parameters": {
+    "property": [
+      {
+        "name": "myBuildParameter",
+        "value": "myValue"
+      }
+    ]
+  },
+  "steps": {
+    "step": [
+      {
+        "name": "myCommandLineStep",
+        "type": "simpleRunner",
+        "properties": {
+          "count": 3,
+          "property": [
+            {
+              "name": "script.content",
+              "value": "echo 'Hello World!'"
+            },
+            {
+              "name": "teamcity.step.mode",
+              "value": "default"
+            },
+            {
+              "name": "use.custom.script",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+<> 2023-04-15T175210.403.txt
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/projects
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a99a0b76-789a-4af9-969e-a76317355385
+Content-Length: 153
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=CDBB06F0B588BFC75B0D4987549D4472
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+    "parentProject": {
+        "locator": "_Root"
+    },
+    "name": "Test Project",
+    "id": "testProjectId",
+    "copyAllAssociatedSettings": true
+}
+
+<> 2023-04-15T175145.400.txt
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=CDBB06F0B588BFC75B0D4987549D4472
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T175133.200.html
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/buildQueue
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a99a0b76-789a-4af9-969e-a76317355385
+Content-Length: 43
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=CDBB06F0B588BFC75B0D4987549D4472
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+	"buildType": {
+    	"id": "buildId"
+	}
+}
+
+<> 2023-04-15T175121.404.txt
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=150915135E6B5BCFB08D701D07B8957D
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T175107.200.html
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/buildTypes
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: 9c72c114-0e87-46bd-bcd0-e0f016467854
+Content-Length: 751
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=150915135E6B5BCFB08D701D07B8957D
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "id",
+  "name": "testBuildName",
+  "project": {
+    "id": "testProjectId"
+  },
+  "parameters": {
+    "property": [
+      {
+        "name": "myBuildParameter",
+        "value": "myValue"
+      }
+    ]
+  },
+  "steps": {
+    "step": [
+      {
+        "name": "myCommandLineStep",
+        "type": "simpleRunner",
+        "properties": {
+          "count": 3,
+          "property": [
+            {
+              "name": "script.content",
+              "value": "echo 'Hello World!'"
+            },
+            {
+              "name": "teamcity.step.mode",
+              "value": "default"
+            },
+            {
+              "name": "use.custom.script",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+<> 2023-04-15T173828.400.txt
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=C8ADBB6F2F7356DCF0B92A80888983D4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T173816.200.html
+
+###
+
+GET http://admin:admin@localhost:8111/app/rest/buildTypes
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=F55A0CF4384CABAA431CED5E787F6D65
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T173431.200.xml
+
+###
+
+GET http://admin:admin@localhost:8111/app/rest/builds
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=F55A0CF4384CABAA431CED5E787F6D65
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T171028.200.xml
+
+###
+
+GET http://admin:admin@localhost:8111/app/rest/buildTypes
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=DA77B71C5C0546238E6CFBEE9F3ED71D
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T170950.200.xml
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/buildTypes
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: 172bdaae-11d3-41ad-b738-67ede4900a1f
+Content-Length: 521
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=DA77B71C5C0546238E6CFBEE9F3ED71D
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "id",
+  "name": "testBuildName",
+  "project": {
+    "id": "testProjectId"
+  },
+  "parameters": {
+    "property": [
+      {
+        "name": "myBuildParameter",
+        "value": "myValue"
+      }
+    ]
+  },
+  "steps": {
+    "step": [
+      {
+        "name": "myCommandLineStep",
+        "type": "simpleRunner",
+        "properties": {
+          "property": [
+            {
+              "name": "script.content",
+              "value": "echo 'Hello World!'"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+<> 2023-04-15T170813.400.txt
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: RecentLogin=; TCSESSIONID=DA77B71C5C0546238E6CFBEE9F3ED71D
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T170800.200.html
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/buildTypes
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: dbdbacf7-8c96-401d-a740-3cabb2b4c6d3
+Content-Length: 521
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=69DDBC3232ABD196A29B119072243533
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "id",
+  "name": "testBuildName",
+  "project": {
+    "id": "testProjectId"
+  },
+  "parameters": {
+    "property": [
+      {
+        "name": "myBuildParameter",
+        "value": "myValue"
+      }
+    ]
+  },
+  "steps": {
+    "step": [
+      {
+        "name": "myCommandLineStep",
+        "type": "simpleRunner",
+        "properties": {
+          "property": [
+            {
+              "name": "script.content",
+              "value": "echo 'Hello World!'"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+<> 2023-04-15T170754.403.txt
+
+###
+
+GET http://admin:admin@localhost:8111/app/rest/buildTypes
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=B9663403BFA3555B4AC4E97C7D8A5700
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T170441.200.xml
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/buildTypes
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: dbdbacf7-8c96-401d-a740-3cabb2b4c6d3
+Content-Length: 613
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=B9663403BFA3555B4AC4E97C7D8A5700
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "id",
+  "name": "testBuildName",
+  "project": {
+    "id": "testProjectId"
+  },
+  "templates": {
+    "buildType": [
+      {
+        "id": "MyTemplateID"
+      }
+    ]
+  },
+  "parameters": {
+    "property": [
+      {
+        "name": "myBuildParameter",
+        "value": "myValue"
+      }
+    ]
+  },
+  "steps": {
+    "step": [
+      {
+        "name": "myCommandLineStep",
+        "type": "simpleRunner",
+        "properties": {
+          "property": [
+            {
+              "name": "script.content",
+              "value": "echo 'Hello World!'"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+<> 2023-04-15T170305.500.txt
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: RecentLogin=; TCSESSIONID=B9663403BFA3555B4AC4E97C7D8A5700
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T170253.200.html
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/buildTypes
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a9fdf64b-69c0-4542-9a1f-a92de89c8ac8
+Content-Length: 613
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=0632B8B392874A52B55B0D8CFC162264
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": "id",
+  "name": "testBuildName",
+  "project": {
+    "id": "testProjectId"
+  },
+  "templates": {
+    "buildType": [
+      {
+        "id": "MyTemplateID"
+      }
+    ]
+  },
+  "parameters": {
+    "property": [
+      {
+        "name": "myBuildParameter",
+        "value": "myValue"
+      }
+    ]
+  },
+  "steps": {
+    "step": [
+      {
+        "name": "myCommandLineStep",
+        "type": "simpleRunner",
+        "properties": {
+          "property": [
+            {
+              "name": "script.content",
+              "value": "echo 'Hello World!'"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+<> 2023-04-15T170249.403.txt
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/vcs-roots
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a9fdf64b-69c0-4542-9a1f-a92de89c8ac8
+Content-Length: 532
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=0632B8B392874A52B55B0D8CFC162264
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+    "id": "MyCustomRootId",
+    "name": "MyCustomRoot",
+    "vcsName": "jetbrains.git",
+    "project": {
+        "id": "testProjectId"
+    },
+    "properties": {
+        "property": [
+            {
+                "name": "authMethod",
+                "value": "ANONYMOUS"
+            },
+            {
+                "name": "branch",
+                "value": "refs/heads/master"
+            },
+            {
+                "name": "url",
+                "value": "https://mygitserver.com/myrepo"
+            }
+        ]
+    }
+}
+
+<> 2023-04-15T165325.200.json
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/vcs-roots
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: a9fdf64b-69c0-4542-9a1f-a92de89c8ac8
+Content-Length: 523
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: RecentLogin=; TCSESSIONID=0632B8B392874A52B55B0D8CFC162264
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+    "id": "MyCustomRootId",
+    "name": "MyCustomRoot",
+    "vcsName": "Test",
+    "project": {
+        "id": "testProjectId"
+    },
+    "properties": {
+        "property": [
+            {
+                "name": "authMethod",
+                "value": "ANONYMOUS"
+            },
+            {
+                "name": "branch",
+                "value": "refs/heads/master"
+            },
+            {
+                "name": "url",
+                "value": "https://mygitserver.com/myrepo"
+            }
+        ]
+    }
+}
+
+<> 2023-04-15T165236.500.txt
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=EE70FBF4D8FDB2A1EA913B62879B23C2
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T165226.200.html
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/vcs-roots
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: cbf56274-b5d9-4587-8888-87b7a9604e20
+Content-Length: 523
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=EE70FBF4D8FDB2A1EA913B62879B23C2
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+    "id": "MyCustomRootId",
+    "name": "MyCustomRoot",
+    "vcsName": "Test",
+    "project": {
+        "id": "testProjectId"
+    },
+    "properties": {
+        "property": [
+            {
+                "name": "authMethod",
+                "value": "ANONYMOUS"
+            },
+            {
+                "name": "branch",
+                "value": "refs/heads/master"
+            },
+            {
+                "name": "url",
+                "value": "https://mygitserver.com/myrepo"
+            }
+        ]
+    }
+}
+
+<> 2023-04-15T162442.500.txt
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/vcs-roots
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: cbf56274-b5d9-4587-8888-87b7a9604e20
+Content-Length: 525
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=EE70FBF4D8FDB2A1EA913B62879B23C2
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+    "id": "MyCustomRootId",
+    "name": "MyCustomRoot",
+    "vcsName": "Test",
+    "project": {
+        "id": "MyCustomProject"
+    },
+    "properties": {
+        "property": [
+            {
+                "name": "authMethod",
+                "value": "ANONYMOUS"
+            },
+            {
+                "name": "branch",
+                "value": "refs/heads/master"
+            },
+            {
+                "name": "url",
+                "value": "https://mygitserver.com/myrepo"
+            }
+        ]
+    }
+}
+
+<> 2023-04-15T162415.404.txt
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: RecentLogin=; TCSESSIONID=EE70FBF4D8FDB2A1EA913B62879B23C2
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T162401.200.html
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/vcs-roots
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: 27ec9221-b614-4117-b1ee-9860004b3a87
+Content-Length: 525
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=048B39084FBC5755C1B4E1BDC3B85DC7
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+    "id": "MyCustomRootId",
+    "name": "MyCustomRoot",
+    "vcsName": "Test",
+    "project": {
+        "id": "MyCustomProject"
+    },
+    "properties": {
+        "property": [
+            {
+                "name": "authMethod",
+                "value": "ANONYMOUS"
+            },
+            {
+                "name": "branch",
+                "value": "refs/heads/master"
+            },
+            {
+                "name": "url",
+                "value": "https://mygitserver.com/myrepo"
+            }
+        ]
+    }
+}
+
+<> 2023-04-15T162352.403.txt
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/projects
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: 27ec9221-b614-4117-b1ee-9860004b3a87
+Content-Length: 153
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=048B39084FBC5755C1B4E1BDC3B85DC7
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+    "parentProject": {
+        "locator": "_Root"
+    },
+    "name": "Test Project",
+    "id": "testProjectId",
+    "copyAllAssociatedSettings": true
+}
+
+<> 2023-04-15T154634.200.json
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: RecentLogin=; TCSESSIONID=048B39084FBC5755C1B4E1BDC3B85DC7
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T154621.200.html
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: RecentLogin=; TCSESSIONID=048B39084FBC5755C1B4E1BDC3B85DC7
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T154616.200.html
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/projects
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: 353932ac-694b-41c3-9694-60bd2d770296
+Content-Length: 153
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=2EC394219297FDF8E9540647C9A76083
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+    "parentProject": {
+        "locator": "_Root"
+    },
+    "name": "Test Project",
+    "id": "testProjectId",
+    "copyAllAssociatedSettings": true
+}
+
+<> 2023-04-15T154613.403.txt
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/projects
+Accept: application/json
+Content-Type: application/json
+X-TC-CSRF-Token: 353932ac-694b-41c3-9694-60bd2d770296
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=2EC394219297FDF8E9540647C9A76083
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T154332.500.txt
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/projectsAccept:%20application/jsonContent-Type:%20application/jsonX-TC-CSRF-Token:%20353932ac-694b-41c3-9694-60bd2d770296
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=2EC394219297FDF8E9540647C9A76083
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T154258.403.txt
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=2EC394219297FDF8E9540647C9A76083
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T154247.200.html
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=2EC394219297FDF8E9540647C9A76083
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T154242.200.html
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/projectsAccept:%20application/jsonContent-Type:%20application/jsonX-TC-CSRF-Token:%20632b710b-364e-4520-b73f-170613556595
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=01B1C9342E785879BE710762894184E0
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T154232.403.txt
+
+###
+
+GET http://admin:admin@localhost:8111/authenticationTest.html?csrf=
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=8F55ACC6B5AE4754EDA18F5F9C4CD18D
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T154015.200.html
+
+###
+
+POST http://admin:admin@localhost:8111/app/rest/projectsAccept:%20application/jsonContent-Type:%20application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=75AA89AD144C8D71B925587CED0C67BA
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T153717.403.txt
+
+###
+
+GET http://admin:admin@localhost:8111/app/rest/projectsAccept:%20application/json
+Content-Length: 83
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: TCSESSIONID=D53FE536BA9A9DD5B2CF93AC10CF7E53
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+ POST http://admin:admin@localhost:8111/app/rest/projects
+ Accept: application/json
+
+<> 2023-04-15T153556.404.txt
+
+###
+
+GET http://admin:admin@localhost:8111/app/rest/projects
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-15T153406.200.json
+
+###
+

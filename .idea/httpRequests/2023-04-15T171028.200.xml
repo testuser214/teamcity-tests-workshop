@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<builds count="1" href="/app/rest/builds">
+    <build id="1" buildTypeId="AutoFeature_Build" number="1" status="SUCCESS" state="finished" branchName="master"
+           defaultBranch="true" href="/app/rest/builds/id:1"
+           webUrl="http://localhost:8111/viewLog.html?buildId=1&amp;buildTypeId=AutoFeature_Build">
+        <finishOnAgentDate>20230411T214146+0000</finishOnAgentDate>
+    </build>
+</builds>

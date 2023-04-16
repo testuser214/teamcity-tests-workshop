@@ -1,0 +1,33 @@
+{
+  "id": "MyCustomRootId",
+  "name": "MyCustomRoot",
+  "vcsName": "jetbrains.git",
+  "href": "/app/rest/vcs-roots/id:MyCustomRootId",
+  "project": {
+    "id": "testProjectId",
+    "name": "Test Project",
+    "parentProjectId": "_Root",
+    "href": "/app/rest/projects/id:testProjectId",
+    "webUrl": "http://localhost:8111/project.html?projectId=testProjectId"
+  },
+  "properties": {
+    "count": 3,
+    "property": [
+      {
+        "name": "authMethod",
+        "value": "ANONYMOUS"
+      },
+      {
+        "name": "branch",
+        "value": "refs/heads/master"
+      },
+      {
+        "name": "url",
+        "value": "https://mygitserver.com/myrepo"
+      }
+    ]
+  },
+  "vcsRootInstances": {
+    "href": "/app/rest/vcs-root-instances?locator=vcsRoot:(id:MyCustomRootId)"
+  }
+}
