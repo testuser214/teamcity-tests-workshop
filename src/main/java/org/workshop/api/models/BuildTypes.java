@@ -11,5 +11,5 @@ public class BuildTypes {
     private String href;
     private String nextHref;
     private String prevHref;
-    private BuildType buildType;
+    private List<BuildTypes> buildType;
 }

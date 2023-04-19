@@ -9,5 +9,5 @@ import java.util.List;
 public class Properties {
     private Integer count;
     private String href;
-    private Property property;
+    private List<Property> property;
 }

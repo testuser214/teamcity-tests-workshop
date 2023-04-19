@@ -9,8 +9,8 @@ public class BuildType {
     private String id;
     private String name;
     private Project project;
-    private BuildType templates;
+    private BuildTypes templates;
     private Properties parameters;
-    private Step steps;
+    private Steps steps;
 
 }

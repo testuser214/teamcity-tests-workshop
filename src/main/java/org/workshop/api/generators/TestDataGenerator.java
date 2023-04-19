@@ -36,7 +36,7 @@ public class TestDataGenerator {
                 .build();
 
     }
-
+/*
     public TestData generateBuildConfiguration(Project project) {
         return TestData.builder().buildType(
                         BuildType.builder()
@@ -46,11 +46,12 @@ public class TestDataGenerator {
                                         BuildType.builder()
                                                 .id(randomData.getString())
                                                 .build())
-                                .steps(Step.builder()
+                                .steps(Steps.builder()
                                         .name(randomData.getString())
                                         .type("simpleRunner")
                                         .properties(
-                                                Property.builder()
+                                                Properties.builder(Property.builder()
+                                                                .)
                                                         .name("script.content")
                                                         .value("echo 'Hello World!'")
                                                         .build())
@@ -59,5 +60,5 @@ public class TestDataGenerator {
                 .build();
 
     }
-
+*/
 }
