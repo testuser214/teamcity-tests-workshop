@@ -16,19 +16,19 @@ public class BaseTest {
 
 
     @BeforeSuite
-    public void setup(){
+    public void setup() {
         RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
         RestAssured.baseURI = "http://admin:admin@localhost:8111";
     }
 
-   @BeforeTest
-    public void beforeTest(){
+    @BeforeTest
+    public void beforeTest() {
         softy = new SoftAssertions();
 
     }
 
     @AfterTest
-    public void afterTest(){
+    public void afterTest() {
         softy.assertAll();
 
     }

@@ -4,12 +4,13 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
- @Data
- @Builder
+
+@Data
+@Builder
 public class BuildTypes {
     private Integer count;
     private String href;
     private String nextHref;
     private String prevHref;
-    private List<BuildTypes> buildType;
+    private List<BuildType> buildType;
 }

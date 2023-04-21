@@ -7,8 +7,9 @@ import java.util.List;
 
 @Data
 @Builder
-public class Properties {
-    private Integer count;
-    private String href;
-    private List<Property> property;
+public class Step {
+
+    private String name;
+    private String type;
+    private Properties properties;
 }

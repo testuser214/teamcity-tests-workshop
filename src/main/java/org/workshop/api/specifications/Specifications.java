@@ -4,12 +4,11 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.workshop.api.requests.CheckedRequests;
-import org.workshop.api.requests.Request;
 
 public class Specifications {
     public static final String CSRF_TOKEN = "X-TC-CSRF-Token";
 
-    public RequestSpecification reqSpec(){
+    public RequestSpecification reqSpec() {
         var csrfToken = new CheckedRequests().getCsrfToken();
 
         // Create Request Specification
@@ -23,7 +22,7 @@ public class Specifications {
 
     }
 
-    public RequestSpecification reqVCSSpec(){
+    public RequestSpecification reqVCSSpec() {
         var csrfToken = new CheckedRequests().getCsrfToken();
 
         // Create Request Specification
